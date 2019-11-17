@@ -1,5 +1,7 @@
 # Pad
 
+[![pub package](https://img.shields.io/pub/v/pad.svg)](https://pub.dartlang.org/packages/pad)
+
 Quick padding for Flutter with a short syntax. Instead of:
 
    ```dart
@@ -17,7 +19,7 @@ You can use:
 
 ## Usage
 
-### Custom padding
+### Directional padding
 
    ```dart
    const Pad(
