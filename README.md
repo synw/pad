@@ -6,7 +6,7 @@ Quick padding for Flutter with a short syntax. Instead of:
 
    ```dart
    const Padding(
-      padding: EdgeInsets.all(10.0),
+      padding: EdgeInsets.only(top: 10.0),
       child: Text("Foo")
    )
    ```
@@ -14,7 +14,7 @@ Quick padding for Flutter with a short syntax. Instead of:
 You can use:
 
    ```dart
-   const PadAll(10.0, child: Text("Foo"))
+   const PadTop(10.0, child: Text("Foo"))
    ```
 
 ## Usage
@@ -33,16 +33,40 @@ You can use:
 
 All parameters are optional
 
-### Pad vertical
+### Pad left
 
    ```dart
-   const PadVertical(10.0, child: Text("Foo"))
+   const PadLeft(10.0, child: Text("Foo"))
+   ```
+
+### Pad right
+
+   ```dart
+   const PadRight(10.0, child: Text("Foo"))
+   ```
+
+### Pad top
+
+   ```dart
+   const PadTop(10.0, child: Text("Foo"))
+   ```
+
+### Pad bottom
+
+   ```dart
+   const PadBottom(10.0, child: Text("Foo"))
    ```
 
 ### Pad horizontal
 
    ```dart
    const PadHorizontal(10.0, child: Text("Foo"))
+   ```
+
+### Pad vertical
+
+   ```dart
+   const PadVertical(10.0, child: Text("Foo"))
    ```
 
 ### Pad all
