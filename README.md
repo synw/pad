@@ -5,16 +5,13 @@
 Quick padding for Flutter with a short syntax. Instead of:
 
    ```dart
-   const Padding(
-      padding: EdgeInsets.only(top: 10.0),
-      child: Text("Foo")
-   )
+   const Padding(padding: EdgeInsets.only(top: 10.0))
    ```
 
 You can use:
 
    ```dart
-   const PadTop(10.0, child: Text("Foo"))
+   const PadTop(10.0)
    ```
 
 ## Usage
