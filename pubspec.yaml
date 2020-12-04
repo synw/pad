@@ -4,21 +4,20 @@ homepage: https://github.com/synw/pad
 version: 0.3.0
 
 environment:
-  sdk: ">=2.12.0-0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
 dev_dependencies:
-  pedantic: ^1.10.0-nullsafety
-  extra_pedantic: ^1.2.0-nullsafety
+  extra_pedantic: ^1.2.0
+  pedantic: ^1.9.2
   flutter_test:
     sdk: flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter.
 flutter:
   # The following line ensures that the Material Icons font is

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class Pad extends StatelessWidget {
   /// Provide a direction
   const Pad(
-      {Key? key,
+      {Key key,
       this.left = 0.0,
       this.top = 0.0,
       this.right = 0.0,
@@ -25,11 +25,11 @@ class Pad extends StatelessWidget {
   final double bottom;
 
   /// Optional child
-  final Widget? child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    late final Padding p;
+    Padding p;
     switch (child == null) {
       case true:
         p = Padding(padding: EdgeInsets.fromLTRB(left, top, right, bottom));
@@ -47,8 +47,12 @@ class Pad extends StatelessWidget {
 class PadLTRB extends StatelessWidget {
   /// Provide LTRB values
   const PadLTRB(this.left, this.top, this.right, this.bottom,
-      {Key? key, this.child})
-      : super(key: key);
+      {Key key, this.child})
+      : assert(left != null),
+        assert(right != null),
+        assert(top != null),
+        assert(bottom != null),
+        super(key: key);
 
   /// Left padding
   final double left;
@@ -63,11 +67,11 @@ class PadLTRB extends StatelessWidget {
   final double bottom;
 
   /// Optional child
-  final Widget? child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    late final Padding p;
+    Padding p;
     switch (child == null) {
       case true:
         p = Padding(padding: EdgeInsets.fromLTRB(left, top, right, bottom));
@@ -84,17 +88,19 @@ class PadLTRB extends StatelessWidget {
 /// Top padding
 class PadTop extends StatelessWidget {
   /// Provide a [padding]
-  const PadTop(this.padding, {Key? key, this.child}) : super(key: key);
+  const PadTop(this.padding, {Key key, this.child})
+      : assert(padding != null),
+        super(key: key);
 
   /// The padding value
   final double padding;
 
   /// The child widget
-  final Widget? child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    late final Padding p;
+    Padding p;
     switch (child == null) {
       case true:
         p = Padding(padding: EdgeInsets.only(top: padding));
@@ -109,17 +115,19 @@ class PadTop extends StatelessWidget {
 /// Bottom padding
 class PadBottom extends StatelessWidget {
   /// Provide a [padding]
-  const PadBottom(this.padding, {Key? key, this.child}) : super(key: key);
+  const PadBottom(this.padding, {Key key, this.child})
+      : assert(padding != null),
+        super(key: key);
 
   /// The padding value
   final double padding;
 
   /// The child widget
-  final Widget? child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    late final Padding p;
+    Padding p;
     switch (child == null) {
       case true:
         p = Padding(padding: EdgeInsets.only(bottom: padding));
@@ -134,17 +142,19 @@ class PadBottom extends StatelessWidget {
 /// Right padding
 class PadRight extends StatelessWidget {
   /// Provide a [padding]
-  const PadRight(this.padding, {Key? key, this.child}) : super(key: key);
+  const PadRight(this.padding, {Key key, this.child})
+      : assert(padding != null),
+        super(key: key);
 
   /// The padding value
   final double padding;
 
   /// The child widget
-  final Widget? child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    late final Padding p;
+    Padding p;
     switch (child == null) {
       case true:
         p = Padding(padding: EdgeInsets.only(right: padding));
@@ -159,17 +169,19 @@ class PadRight extends StatelessWidget {
 /// Left padding
 class PadLeft extends StatelessWidget {
   /// Provide a [padding]
-  const PadLeft(this.padding, {Key? key, this.child}) : super(key: key);
+  const PadLeft(this.padding, {Key key, this.child})
+      : assert(padding != null),
+        super(key: key);
 
   /// The padding value
   final double padding;
 
   /// The child widget
-  final Widget? child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    late final Padding p;
+    Padding p;
     switch (child == null) {
       case true:
         p = Padding(padding: EdgeInsets.only(left: padding));
@@ -184,17 +196,19 @@ class PadLeft extends StatelessWidget {
 /// Vertical padding
 class PadVertical extends StatelessWidget {
   /// Provide a [padding]
-  const PadVertical(this.padding, {Key? key, this.child}) : super(key: key);
+  const PadVertical(this.padding, {Key key, this.child})
+      : assert(padding != null),
+        super(key: key);
 
   /// The padding value
   final double padding;
 
   /// The child widget
-  final Widget? child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    late final Padding p;
+    Padding p;
     switch (child == null) {
       case true:
         p = Padding(padding: EdgeInsets.symmetric(vertical: padding));
@@ -210,17 +224,19 @@ class PadVertical extends StatelessWidget {
 /// Horizontal padding
 class PadHorizontal extends StatelessWidget {
   /// Provide a [padding]
-  const PadHorizontal(this.padding, {Key? key, this.child}) : super(key: key);
+  const PadHorizontal(this.padding, {Key key, this.child})
+      : assert(padding != null),
+        super(key: key);
 
   /// The padding value
   final double padding;
 
   /// The child widget
-  final Widget? child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    late final Padding p;
+    Padding p;
     switch (child == null) {
       case true:
         p = Padding(padding: EdgeInsets.symmetric(horizontal: padding));
@@ -236,17 +252,19 @@ class PadHorizontal extends StatelessWidget {
 /// All directions padding
 class PadAll extends StatelessWidget {
   /// Provide a [padding]
-  const PadAll(this.padding, {Key? key, this.child}) : super(key: key);
+  const PadAll(this.padding, {Key key, this.child})
+      : assert(padding != null),
+        super(key: key);
 
   /// The padding value
   final double padding;
 
   /// The child widget
-  final Widget? child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    late final Padding p;
+    Padding p;
     switch (child == null) {
       case true:
         p = Padding(padding: EdgeInsets.all(padding));
