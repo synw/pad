@@ -1,7 +1,7 @@
 name: pad
 description: Quick padding with a short syntax. Shortcuts for the classical Padding widget
 homepage: https://github.com/synw/pad
-version: 0.3.0
+version: 0.3.0-dev.1
 
 environment:
   sdk: ">=2.12.0-0 <3.0.0"

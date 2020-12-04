@@ -3,7 +3,6 @@
 ## 0.3.0
 
 - Upgrade Flutter project
-- Enable to null safety
 
 ## 0.2.0
 
