@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.0
+
+- Null safety
+
 ## 0.3.0
 
 - Upgrade Flutter project
