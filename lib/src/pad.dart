@@ -233,6 +233,33 @@ class PadHorizontal extends StatelessWidget {
   }
 }
 
+/// Horizontal symmetric
+class PadSymmetric extends StatelessWidget {
+  /// Provide a [horizontal,vertical]
+  const PadSymmetric( {required this.horizontal,required this.vertical,Key? key, this.child}) : super(key: key);
+
+  /// The padding value
+  final double horizontal;
+  final double vertical;
+
+  /// The child widget
+  final Widget? child;
+
+  @override
+  Widget build(BuildContext context) {
+    late final Padding p;
+    switch (child == null) {
+      case true:
+        p = Padding(padding: EdgeInsets.symmetric(horizontal: horizontal,vertical: vertical));
+        break;
+      case false:
+        p = Padding(
+            padding: EdgeInsets.symmetric(horizontal: horizontal,vertical: vertical), child: child);
+    }
+    return p;
+  }
+}
+
 /// All directions padding
 class PadAll extends StatelessWidget {
   /// Provide a [padding]
