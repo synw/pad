@@ -65,6 +65,12 @@ All parameters are optional
    ```dart
    const PadVertical(10.0, child: Text("Foo"))
    ```
+   
+### Pad symmetric
+
+   ```dart
+   const PadSymmetric(10.0, 10.0, child: Text("Foo"))
+   ```
 
 ### Pad all
 
